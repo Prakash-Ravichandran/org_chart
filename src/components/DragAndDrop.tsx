@@ -1,3 +1,4 @@
+import { data } from "../assets";
 import { Status } from "../interfaces";
 import { ContainerCards } from "./ContainerCards";
 
@@ -7,7 +8,7 @@ export const DragAndDrop = () => {
   return (
     <div className="grid">
       {typesHero.map((container) => (
-        <ContainerCards status={container} key={container} />
+        <ContainerCards status={container} key={container} items={data} />
       ))}
     </div>
   );
