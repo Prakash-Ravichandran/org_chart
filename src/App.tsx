@@ -1,4 +1,5 @@
 import "./App.css";
+import { DragAndDrop } from "./components/DragAndDrop";
 
 import { Title } from "./components/Title";
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <div className="container-main flex">
         <Title />
+        <DragAndDrop />
       </div>
     </>
   );
