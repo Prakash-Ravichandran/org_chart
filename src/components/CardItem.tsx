@@ -7,7 +7,7 @@ interface Props {
 
 export const CardItem = ({ data, handleDragging }: Props) => {
   return (
-    <div className="card-container">
+    <div className="card-container" draggable>
       <p>{data.content}</p>
     </div>
   );

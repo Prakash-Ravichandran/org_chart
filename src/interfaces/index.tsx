@@ -1,4 +1,4 @@
-export type Status = "Good" | "Normal" | "Bad";
+export type Status = "good" | "bad" | "normal";
 
 export interface Data {
   id: number;
