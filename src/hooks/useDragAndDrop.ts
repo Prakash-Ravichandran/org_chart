@@ -12,7 +12,6 @@ export const useDrapAndDrop = (data: Data[]) => {
 
     if (card && card.status !== status) {
       card.status = status;
-
       setListItems((prev) => [card!, ...prev.filter((item) => item.id !== id)]);
     }
   };
