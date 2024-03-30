@@ -3,7 +3,7 @@ import { useDrapAndDrop } from "../hooks/useDragAndDrop";
 import { Status } from "../interfaces";
 import { ContainerCards } from "./ContainerCards";
 
-const typesHero: Status[] = ["good", "normal", "bad"];
+const typesHero: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
 
 export const DragAndDrop = () => {
   const { isDragging, listItems, handleDragging, handleUpdateList } =

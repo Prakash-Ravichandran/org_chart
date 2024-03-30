@@ -1,7 +1,8 @@
-export type Status = "good" | "bad" | "normal";
+export type Status = "Thomas Frank" | "Mikel Arteta" | "Mark Robins";
 
 export interface Data {
   id: number;
-  content: String;
+  name: String;
+  designation: String;
   status: Status;
 }

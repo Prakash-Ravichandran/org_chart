@@ -12,6 +12,7 @@ export const CardItem = ({ data, handleDragging }: Props) => {
     handleDragging(true);
   };
   const handleDragEnd = () => handleDragging(false);
+
   return (
     <div
       className="card-container"
@@ -19,7 +20,9 @@ export const CardItem = ({ data, handleDragging }: Props) => {
       onDragEnd={handleDragEnd}
       onDragStart={handleDragStart}
     >
-      <p>{data.content}</p>
+      <p>{data.name}</p>
+      <p>{`Designation: ${data.designation}`}</p>
+      <span>{`Reports to: ${data.status}`}</span>
     </div>
   );
 };

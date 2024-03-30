@@ -1,3 +1,4 @@
+import { Tree, TreeNode } from "react-organizational-chart";
 import { Data, Status } from "../interfaces";
 import { CardItem } from "./CardItem";
 
@@ -8,6 +9,10 @@ interface Props {
   handleUpdateList: (id: number, status: Status) => void;
   handleDragging: (dragging: boolean) => void;
 }
+
+// interface TreeProps{
+//   label: Element
+// }
 
 export const ContainerCards = ({
   items = [],
@@ -31,7 +36,38 @@ export const ContainerCards = ({
       onDrop={handleDrop}
       onDragOver={handleDragOver}
     >
-      <p>{status} hero</p>
+      {/* <img
+        src={"https://bumbeishvili.github.io/avatars/avatars/portrait20.png"}
+        alt="manager"
+      ></img> */}
+
+      <Tree
+        lineHeight="50px"
+        lineWidth={"3px"}
+        lineColor={"green"}
+        lineBorderRadius={"10px"}
+        label={<p>{status} </p>}
+      >
+        <TreeNode
+          label={
+            <div>
+              {" "}
+              {items.map(
+                (item) =>
+                  status === item.status && (
+                    <CardItem
+                      data={item}
+                      key={item.id}
+                      handleDragging={handleDragging}
+                    />
+                  )
+              )}
+            </div>
+          }
+        ></TreeNode>
+      </Tree>
+
+      {/* <p>{status} </p>
       {items.map(
         (item) =>
           status === item.status && (
@@ -41,7 +77,7 @@ export const ContainerCards = ({
               handleDragging={handleDragging}
             />
           )
-      )}
+      )} */}
     </div>
   );
 };
