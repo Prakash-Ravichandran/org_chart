@@ -30,6 +30,7 @@ export const DragAndDrop = () => {
           items={listItems}
           isDragging={isDragging}
           handleDragging={handleDragging}
+          handleUpdateList={handleUpdateList}
         />
       ))}
     </div>

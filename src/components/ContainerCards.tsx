@@ -5,8 +5,8 @@ interface Props {
   items: Data[];
   status: Status;
   isDragging: boolean;
-  handleDragging: (dragging: boolean) => void;
   handleUpdateList: (id: number, status: Status) => void;
+  handleDragging: (dragging: boolean) => void;
 }
 
 export const ContainerCards = ({
@@ -14,10 +14,24 @@ export const ContainerCards = ({
   status,
   isDragging,
   handleDragging,
+  handleUpdateList,
 }: Props) => {
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    handleUpdateList(+e.dataTransfer.getData("text"), status);
+    handleDragging(false);
+  };
+
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) =>
+    e.preventDefault();
+
   return (
-    <div className={`layout-cards ${isDragging ? "layout-dragging" : ""}`}>
-      <p>{status}hero</p>
+    <div
+      className={`layout-cards ${isDragging ? "layout-dragging" : ""}`}
+      onDrop={handleDrop}
+      onDragOver={handleDragOver}
+    >
+      <p>{status} hero</p>
       {items.map(
         (item) =>
           status === item.status && (
