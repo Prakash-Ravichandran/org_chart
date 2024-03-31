@@ -10,10 +10,6 @@ interface Props {
   handleDragging: (dragging: boolean) => void;
 }
 
-// interface TreeProps{
-//   label: Element
-// }
-
 export const ContainerCards = ({
   items = [],
   status,
