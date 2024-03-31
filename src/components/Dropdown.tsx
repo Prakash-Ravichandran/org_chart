@@ -14,12 +14,29 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange }) => {
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     onChange(e);
   };
+
+  //   function getUniqueListBy(
+  //     arr: Array<{
+  //       id: number;
+  //       name: String;
+  //       designation: String;
+  //       status: String;
+  //     }>,
+  //     key
+  //   ) {
+  //     return [...new Map(arr.map((item) => [item[key], item])).values()];
+  //   }
+
+  //   console.log(getUniqueListBy(options, "designation"));
+
+  //   options.designation = [...new Set()]
+
   return (
     <>
       <select onChange={handleSelectChange}>
-        <option value={"Choose an Employee"}>
+        {/* <option value={"Choose an Employee"}>
           {"Choose by Designation ..."}
-        </option>
+        </option> */}
         {options.map((option) => (
           <option key={option.id} value={option.id}>
             {option.designation}

@@ -12,10 +12,12 @@ interface Props {
 }
 
 const StyledNode = styled.div`
-  padding: 5px;
+  margin-top: 10px;
+  padding: 10px;
   border-radius: 8px;
   display: inline-block;
-  border: 1px solid white;
+  border: 2px solid #ff3a3a;
+  color: #000000;
 `;
 
 export const ContainerCards = ({
@@ -44,7 +46,6 @@ export const ContainerCards = ({
         <TreeNode
           label={
             <div>
-              {" "}
               {items.map(
                 (item) =>
                   status === item.status && (

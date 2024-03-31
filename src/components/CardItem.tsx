@@ -21,7 +21,7 @@ export const CardItem = ({ data, handleDragging }: Props) => {
       onDragStart={handleDragStart}
     >
       <p>{data.name}</p>
-      <p>{`Designation: ${data.designation}`}</p>
+      <span>{`Designation: ${data.designation}`}</span>
       <span>{`Reports to: ${data.status}`}</span>
     </div>
   );

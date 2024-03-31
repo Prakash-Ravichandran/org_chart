@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Tree } from "react-organizational-chart";
 import styled from "styled-components";
 import { data } from "../assets";
@@ -11,10 +11,11 @@ import { Search } from "./Search";
 const typesHero: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
 
 const StyledNode = styled.div`
-  padding: 5px;
+  padding: 10px;
   border-radius: 8px;
   display: inline-block;
-  border: 1px solid white;
+  border: 2px solid #ff3a3a;
+  color: #000000;
 `;
 
 export const DragAndDrop = () => {
@@ -30,13 +31,6 @@ export const DragAndDrop = () => {
   const [filteredData, setFilteredData] = useState(data);
   const [category, setCatergory] = useState(""); // state for dropdown
   const inputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    // Focus the input element when the component mounts
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, []);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
@@ -93,7 +87,7 @@ export const DragAndDrop = () => {
       <Tree
         lineHeight="55px"
         lineWidth={"3px"}
-        lineColor={"white"}
+        lineColor={"#ff3a3a"}
         lineBorderRadius={"10px"}
         label={<StyledNode>{"William HallBerg"} </StyledNode>}
       >
