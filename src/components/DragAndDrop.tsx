@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Tree } from "react-organizational-chart";
 import styled from "styled-components";
 import { data } from "../assets";
@@ -15,29 +16,61 @@ const StyledNode = styled.div`
 `;
 
 export const DragAndDrop = () => {
-  const { isDragging, listItems, handleDragging, handleUpdateList } =
-    useDrapAndDrop(data);
+  const {
+    isDragging,
+    listItems,
+    setListItems,
+    handleDragging,
+    handleUpdateList,
+  } = useDrapAndDrop(data);
+
+  const [search, setSearchTerm] = useState("");
+  const [filteredData, setFilteredData] = useState(data);
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const { value } = event.target;
+    setSearchTerm(value);
+    filterData(value);
+  };
+
+  const filterData = (search: String) => {
+    const filteredData = data.filter((item) =>
+      item.name.toLowerCase().includes(search.toLowerCase())
+    );
+    setFilteredData(filteredData);
+    console.log(filteredData);
+  };
 
   return (
-    <Tree
-      lineHeight="55px"
-      lineWidth={"3px"}
-      lineColor={"white"}
-      lineBorderRadius={"10px"}
-      label={<StyledNode>{"William HallBerg"} </StyledNode>}
-    >
-      <div className="grid">
-        {typesHero.map((container) => (
-          <ContainerCards
-            status={container}
-            key={container}
-            items={listItems}
-            isDragging={isDragging}
-            handleDragging={handleDragging}
-            handleUpdateList={handleUpdateList}
-          />
-        ))}
+    <>
+      <div className="search-crypto">
+        <input
+          placeholder="Search an Employee..."
+          value={search}
+          onChange={handleInputChange}
+        />
       </div>
-    </Tree>
+
+      <Tree
+        lineHeight="55px"
+        lineWidth={"3px"}
+        lineColor={"white"}
+        lineBorderRadius={"10px"}
+        label={<StyledNode>{"William HallBerg"} </StyledNode>}
+      >
+        <div className="grid">
+          {typesHero.map((container) => (
+            <ContainerCards
+              status={container}
+              key={container}
+              items={filteredData}
+              isDragging={isDragging}
+              handleDragging={handleDragging}
+              handleUpdateList={handleUpdateList}
+            />
+          ))}
+        </div>
+      </Tree>
+    </>
   );
 };

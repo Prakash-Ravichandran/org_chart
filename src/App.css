@@ -40,3 +40,22 @@
 .read-the-docs {
   color: #888;
 }
+
+/*search css */
+.search-crypto {
+  margin: 20px auto 30px auto;
+  width: 250px;
+}
+/*#00b4cc */
+.search-crypto > input {
+  border: 3px solid slateblue;
+  border-radius: 5px;
+  color: #000000;
+  padding: 10px;
+  outline: none;
+}
+.search-crypto > ::-webkit-input-placeholder {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  color: slateblue;
+}

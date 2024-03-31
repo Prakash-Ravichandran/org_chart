@@ -19,6 +19,7 @@ export const useDrapAndDrop = (data: Data[]) => {
   return {
     isDragging,
     listItems,
+    setListItems,
     handleDragging,
     handleUpdateList,
   };
