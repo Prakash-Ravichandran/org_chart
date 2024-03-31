@@ -38,7 +38,8 @@ export const DragAndDrop = () => {
       (employee) =>
         employee.name.toLowerCase().includes(search.toLowerCase()) ||
         employee.id === +search.toLowerCase() ||
-        employee.designation.toLowerCase().includes(search.toLowerCase())
+        employee.designation.toLowerCase().includes(search.toLowerCase()) ||
+        employee.status.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredData(filteredData);
     console.log(filteredData);
