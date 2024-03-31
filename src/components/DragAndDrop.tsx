@@ -34,8 +34,11 @@ export const DragAndDrop = () => {
   };
 
   const filterData = (search: String) => {
-    const filteredData = data.filter((item) =>
-      item.name.toLowerCase().includes(search.toLowerCase())
+    const filteredData = data.filter(
+      (employee) =>
+        employee.name.toLowerCase().includes(search.toLowerCase()) ||
+        employee.id === +search.toLowerCase() ||
+        employee.designation.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredData(filteredData);
     console.log(filteredData);
