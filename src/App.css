@@ -43,7 +43,7 @@
 
 /*search css */
 .choose-employee {
-  margin: 20px auto 30px auto;
+  /* margin: 20px auto 30px auto; */
   width: 250px;
 }
 /*#00b4cc */
@@ -58,4 +58,18 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
   color: slateblue;
+}
+
+select {
+  padding: 10px;
+  color: slateblue;
+  font-family: sans-serif;
+  font-style: normal;
+  border-radius: 8px;
+  outline: slateblue;
+}
+.flex-container {
+  display: flex;
+  margin: 25px;
+  align-self: flex-start;
 }

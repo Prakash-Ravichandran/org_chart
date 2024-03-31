@@ -31,6 +31,7 @@ export const DragAndDrop = () => {
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
+    setCatergory(() => "");
     setSearchTerm(value);
     filterData(value);
   };
@@ -44,29 +45,27 @@ export const DragAndDrop = () => {
         employee.status.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredData(filteredData);
-    console.log(filteredData);
-  };
-
-  const handleDropdownCategory = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setCatergory(e.target.value);
-    filterData(e.target.value);
   };
 
   const handleDropdownChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    // console.log("Selected value:", selectedValue);
+    setSearchTerm(() => "");
     setCatergory(e.target.value);
     filterData(e.target.value);
   };
 
   return (
     <>
-      <div className="choose-employee">
-        <input
-          placeholder="Search an Employee..."
-          value={search}
-          onChange={handleInputChange}
-        />
+      <div className="flex-container">
+        <div className="choose-employee">
+          <input
+            placeholder="Search an Employee..."
+            value={search}
+            onChange={handleInputChange}
+          />
+        </div>
+        <Dropdown options={data} onChange={handleDropdownChange} />
       </div>
+
       {/* <select
         id="setEmployeeByCategory"
         className="choose-employee"
@@ -79,7 +78,6 @@ export const DragAndDrop = () => {
           </option>
         ))}
       </select> */}
-      <Dropdown options={data} onChange={handleDropdownChange} />
 
       <Tree
         lineHeight="55px"
