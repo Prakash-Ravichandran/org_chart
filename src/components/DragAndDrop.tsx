@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Tree } from "react-organizational-chart";
 import styled from "styled-components";
 import { data } from "../assets";
@@ -6,6 +6,7 @@ import { useDrapAndDrop } from "../hooks/useDragAndDrop";
 import { Status } from "../interfaces";
 import { ContainerCards } from "./ContainerCards";
 import Dropdown from "./Dropdown";
+import { Search } from "./Search";
 
 const typesHero: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
 
@@ -28,12 +29,26 @@ export const DragAndDrop = () => {
   const [search, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState(data);
   const [category, setCatergory] = useState(""); // state for dropdown
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    // Focus the input element when the component mounts
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
     setCatergory(() => "");
     setSearchTerm(value);
     filterData(value);
+  };
+
+  const handleDropdownChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSearchTerm(() => "");
+    setCatergory(e.target.value);
+    filterData(e.target.value);
   };
 
   const filterData = (search: String) => {
@@ -47,22 +62,18 @@ export const DragAndDrop = () => {
     setFilteredData(filteredData);
   };
 
-  const handleDropdownChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSearchTerm(() => "");
-    setCatergory(e.target.value);
-    filterData(e.target.value);
-  };
-
   return (
     <>
       <div className="flex-container">
-        <div className="choose-employee">
+        {/* <div className="choose-employee">
           <input
             placeholder="Search an Employee..."
             value={search}
             onChange={handleInputChange}
+            ref={inputRef}
           />
-        </div>
+        </div> */}
+        <Search Value={search} handleInputChange={handleInputChange} />
         <Dropdown options={data} onChange={handleDropdownChange} />
       </div>
 
