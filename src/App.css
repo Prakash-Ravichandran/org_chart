@@ -42,19 +42,19 @@
 }
 
 /*search css */
-.search-crypto {
+.choose-employee {
   margin: 20px auto 30px auto;
   width: 250px;
 }
 /*#00b4cc */
-.search-crypto > input {
+.choose-employee > input {
   border: 3px solid slateblue;
   border-radius: 5px;
   color: #000000;
   padding: 10px;
   outline: none;
 }
-.search-crypto > ::-webkit-input-placeholder {
+.choose-employee > ::-webkit-input-placeholder {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
   color: slateblue;

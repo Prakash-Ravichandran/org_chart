@@ -1,10 +1,11 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Tree } from "react-organizational-chart";
 import styled from "styled-components";
 import { data } from "../assets";
 import { useDrapAndDrop } from "../hooks/useDragAndDrop";
 import { Status } from "../interfaces";
 import { ContainerCards } from "./ContainerCards";
+import Dropdown from "./Dropdown";
 
 const typesHero: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
 
@@ -26,6 +27,7 @@ export const DragAndDrop = () => {
 
   const [search, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState(data);
+  const [category, setCatergory] = useState(""); // state for dropdown
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
@@ -45,15 +47,39 @@ export const DragAndDrop = () => {
     console.log(filteredData);
   };
 
+  const handleDropdownCategory = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setCatergory(e.target.value);
+    filterData(e.target.value);
+  };
+
+  const handleDropdownChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    // console.log("Selected value:", selectedValue);
+    setCatergory(e.target.value);
+    filterData(e.target.value);
+  };
+
   return (
     <>
-      <div className="search-crypto">
+      <div className="choose-employee">
         <input
           placeholder="Search an Employee..."
           value={search}
           onChange={handleInputChange}
         />
       </div>
+      {/* <select
+        id="setEmployeeByCategory"
+        className="choose-employee"
+        onChange={handleDropdownCategory}
+      >
+        <option value={"Select an Employee"}>Select an Employee</option>
+        {data.map((employee) => (
+          <option value={employee.id} key={employee.id}>
+            {employee.name}
+          </option>
+        ))}
+      </select> */}
+      <Dropdown options={data} onChange={handleDropdownChange} />
 
       <Tree
         lineHeight="55px"
