@@ -15,10 +15,6 @@
 
 ![Organization_chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/3d657dc6-cd0c-4b92-9671-3ccddf867c5b)
 
-## Video Demo
-
-![Video Demo](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/92a9fbed-07ca-4d2e-9c88-ad5d343fb7eb)
-
 ## TechStack Used
 
 - [React](https://react.dev/)
