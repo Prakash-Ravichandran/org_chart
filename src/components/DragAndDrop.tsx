@@ -80,10 +80,11 @@ export const DragAndDrop = () => {
                 src={
                   "https://bumbeishvili.github.io/avatars/avatars/portrait48.png"
                 }
-                alt="Maneger"
+                alt="Manager"
               />
             </span>
             <p>{"William HallBerg"}</p>
+            <span className="ceo-designation">{"Chief Executive Officer"}</span>
           </StyledNode>
         }
       >

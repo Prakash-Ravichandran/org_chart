@@ -36,8 +36,9 @@ export const ContainerCards = ({
     handleDragging(false);
   };
 
-  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) =>
+  const handleDragOver = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
+  };
 
   return (
     <div
@@ -51,14 +52,12 @@ export const ContainerCards = ({
             <span>
               <img
                 src={
-                  "https://bumbeishvili.github.io/avatars/avatars/portrait10.png"
+                  "https://bumbeishvili.github.io/avatars/avatars/portrait14.png"
                 }
-                alt="Maneger"
               />
             </span>
-            {status}
-
-            <p>Manager</p>
+            <p>{status}</p>
+            <span>Manager</span>
           </StyledNode>
         }
       >
