@@ -50,6 +50,8 @@
 
 ## The Process
 
+- (pending)
+
 ### User Stories
 
 - As a user, I want to be able to navigate to all routes(sidebars) & view all the components.
@@ -65,13 +67,9 @@
 - **Drag & Drop:** Drag and Drop functionality changes the employee from reporting to one manager to other.
 - **List Out in Card**: The Employee card listouts the details of name, designation, reporting Manager.
 
-### API Services used
-
-- **Coinranking** - [Coinranking](https://coinranking1.p.rapidapi.com)
-- **COinbase** - [Exchange](https://api.coinbase.com/v2/exchange-rates)
-- **Gnews** - [News](https://gnews.io/api/v4/top-headlines)
-
 ### Screenshots
+
+- (pending)
 
 ## Current Contributors
 
