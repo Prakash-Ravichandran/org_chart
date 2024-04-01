@@ -1,22 +1,17 @@
 <h1 align="center">
-CRYPTOMARKETS
+ EMPLOYEE ORGANIZATION CHART
 </h1>
 
 <p align="center">
-  The ideal platform to find different crypto currencies & their exchanges. <br /> Designed to inspire and encourage individuals to initiate their contributions to the open source community.
+  The ideal platform to search, filter, drag and drop employees listout under different managers. 
 </p>
 
 ## Video Demo
 
-https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/assets/74542543/66d19de1-ccb9-4ca4-b19d-1cd14ae79335
-
 ## TechStack Used
 
 - [React.js](https://react.dev/)
-- [Redux](https://redux-toolkit.js.org/rtk-query/overview)
-- [Ant-Design](https://ant.design/)
-- [Material-UI](https://mui.com/material-ui/)
-- [Google-Identity-services](https://console.cloud.google.com/apis/credentials/oauthclient/728562345073-fkrij7aekj2h2qgqjgsro44cjsovi4oi.apps.googleusercontent.com?authuser=1&project=react-cryptoapp)
+- [react-organizational-chart](https://www.npmjs.com/package/react-organizational-chart)
 - [Hosting- Netlify](https://www.netlify.com/)
 
 ### 1. Setting up the project locally
