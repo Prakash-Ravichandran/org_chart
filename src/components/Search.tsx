@@ -12,8 +12,6 @@ export const Search = ({ Value, handleInputChange }: searchProps) => {
   //     }
   //   }, []);
 
-  console.log("inside Search");
-  console.log(handleInputChange);
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     handleInputChange(e);
   };

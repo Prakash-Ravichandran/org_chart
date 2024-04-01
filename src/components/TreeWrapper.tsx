@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { data } from "../assets";
 import { useDrapAndDrop } from "../hooks/useDragAndDrop";
 import { Status } from "../interfaces";
+import { TreeWrapperConstants } from "./contants";
 import Dropdown from "./Dropdown";
 import { ManagerCard } from "./ManagerCard";
 import { Search } from "./Search";
@@ -76,16 +77,11 @@ export const TreeWrapper = () => {
         label={
           <StyledNode>
             <span>
-              <img
-                src={
-                  "https://bumbeishvili.github.io/avatars/avatars/portrait48.png"
-                }
-                alt="Manager"
-              />
+              <img src={`${TreeWrapperConstants.image}`} alt="Manager" />
             </span>
-            <p>{"William HallBerg"}</p>
+            <p>{`${TreeWrapperConstants.name}`}</p>
             <span className="ceo-designation">
-              {"Designation: Chief Executive Officer"}
+              {`${TreeWrapperConstants.designationLabel}:${TreeWrapperConstants.designation}`}
             </span>
           </StyledNode>
         }

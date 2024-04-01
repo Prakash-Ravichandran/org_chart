@@ -8,3 +8,9 @@ export const ManagerCardConstants = {
   designation: "Engineering Manager",
   image: "https://bumbeishvili.github.io/avatars/avatars/portrait14.png",
 } as const;
+export const TreeWrapperConstants = {
+  designationLabel: "Designation",
+  designation: "Chief Executive Officer",
+  image: "https://bumbeishvili.github.io/avatars/avatars/portrait48.png",
+  name: "William Hallberg",
+} as const;
