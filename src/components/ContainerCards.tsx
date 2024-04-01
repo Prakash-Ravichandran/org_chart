@@ -13,8 +13,9 @@ interface Props {
 
 const StyledNode = styled.div`
   display: inline-block;
+  background: #f9e7e7;
+  border: 3px solid #ff3a3a33;
   border-radius: 8px;
-  border: 2px solid #ff3a3a;
   color: #000000;
   font-weight: bold;
   font-size: 1.5rem;
@@ -44,7 +45,14 @@ export const ContainerCards = ({
       onDrop={handleDrop}
       onDragOver={handleDragOver}
     >
-      <TreeNode label={<StyledNode>{status} </StyledNode>}>
+      <TreeNode
+        label={
+          <StyledNode>
+            {status}
+            <p>Manager</p>
+          </StyledNode>
+        }
+      >
         <TreeNode
           label={
             <div>

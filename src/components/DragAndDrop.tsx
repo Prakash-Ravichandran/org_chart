@@ -12,13 +12,16 @@ const typesHero: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
 
 const StyledNode = styled.div`
   display: inline-block;
-  border-radius: 8px;
-  border: 2px solid #ff3a3a;
+  margin-top: 10px;
+  background-color: #f9e7e7;
   color: #000000;
   font-weight: bold;
-  font-size: 1.5rem;
-  margin-top: 10px;
-  padding: 10px;
+  font-size: 1.2rem;
+  border: 2px solid #ff3a3a33;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+  animation: fadeIn 0.3s ease-in-out;
 `;
 
 export const DragAndDrop = () => {
@@ -62,31 +65,9 @@ export const DragAndDrop = () => {
   return (
     <>
       <div className="flex-container">
-        {/* <div className="choose-employee">
-          <input
-            placeholder="Search an Employee..."
-            value={search}
-            onChange={handleInputChange}
-            ref={inputRef}
-          />
-        </div> */}
         <Search Value={search} handleInputChange={handleInputChange} />
         <Dropdown options={data} onChange={handleDropdownChange} />
       </div>
-
-      {/* <select
-        id="setEmployeeByCategory"
-        className="choose-employee"
-        onChange={handleDropdownCategory}
-      >
-        <option value={"Select an Employee"}>Select an Employee</option>
-        {data.map((employee) => (
-          <option value={employee.id} key={employee.id}>
-            {employee.name}
-          </option>
-        ))}
-      </select> */}
-
       <Tree
         lineHeight="55px"
         lineWidth={"3px"}
