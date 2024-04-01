@@ -30,3 +30,8 @@ export interface ManagerCardProps {
   handleUpdateList: (id: number, status: Status) => void;
   handleDragging: (dragging: boolean) => void;
 }
+
+export interface searchProps {
+  Value: string;
+  handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
