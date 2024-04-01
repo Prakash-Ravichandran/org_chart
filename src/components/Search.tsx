@@ -1,11 +1,6 @@
 import React, { useRef } from "react";
 import { searchProps } from "../interfaces";
 
-// interface searchProps {
-//   Value: string;
-//   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-// }
-
 export const Search = ({ Value, handleInputChange }: searchProps) => {
   const inputRef = useRef<HTMLInputElement | null>();
   //   const [focusInput, setFocusInput] = useFocus();
