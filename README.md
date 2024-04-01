@@ -1,10 +1,14 @@
 <h1 align="center">
- EMPLOYEE ORGANIZATION CHART
+ EMPLOYEE ORGANIZATION CHART - 
 </h1>
 
 <p align="center">
   The ideal platform to search, filter, drag and drop employees listouted under different managers. 
 </p>
+
+## Visit Live Demo
+
+[Live-Demo](https://org-employee.netlify.app/)
 
 ## Video Demo
 

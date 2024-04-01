@@ -33,7 +33,12 @@ export const DragAndDrop = () => {
     handleUpdateList,
   } = useDrapAndDrop(data);
 
+  const highLightStyle = {
+    border: "1px solid green",
+  };
+
   const [search, setSearchTerm] = useState("");
+  const [highLightSearch, setHighLightSearch] = useState(highLightStyle);
   const [filteredData, setFilteredData] = useState(data);
   const [category, setCatergory] = useState(""); // state for dropdown
   const inputRef = useRef<HTMLInputElement>(null);
@@ -42,6 +47,9 @@ export const DragAndDrop = () => {
     const { value } = event.target;
     setCatergory(() => "");
     setSearchTerm(value);
+    setHighLightSearch({
+      border: "1px solid blue",
+    });
     filterData(value);
   };
 
