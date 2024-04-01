@@ -69,38 +69,6 @@
 
 ### Screenshots
 
-## Login
-
-![image](https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/assets/74542543/0908c711-7a0e-4adb-807c-393822b765ec)
-
-## HomePage
-
-![image](https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/assets/74542543/6e8cc066-f828-4b38-ac05-fbc51e8080b1)
-
-## Crpytocurrencies
-
-![image](https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/assets/74542543/d424a546-aa37-4faf-8cd2-af71703714d8)
-
-## Cryptodetails
-
-![image](https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/assets/74542543/d1366fdb-1dc3-494b-ad84-df7c6aab1d21)
-
-## Exchange
-
-![image](https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/assets/74542543/48b7ee63-63fa-4cf3-85ee-392deeb16469)
-
-## News
-
-![image](https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/assets/74542543/aa110bc5-d41e-4162-b8be-39c0ba0c3aa3)
-
-## Contact
-
-![image](https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/assets/74542543/bf74cbce-b777-42fa-809e-09b18f727f63)
-
-## Signout
-
-![image](https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/assets/74542543/138907cb-0e62-4bf5-85c5-cb5631b81a76)
-
 ## Current Contributors
 
 <a href="https://github.com/Prakash-Ravichandran/react_cryptocurrency_app/graphs/contributors">
