@@ -52,12 +52,14 @@
   border-radius: 5px;
   color: #000000;
   padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   outline: none;
 }
 .choose-employee > ::-webkit-input-placeholder {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
   color: #000000;
+  opacity: 0.6;
 }
 
 select {
