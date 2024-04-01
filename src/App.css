@@ -63,15 +63,16 @@
 }
 
 select {
-  padding: 10px;
+  border: 2px solid #ff3a3a;
+  border-radius: 8px;
   color: #000000;
   font-family: sans-serif;
   font-style: normal;
-  border: 2px solid #ff3a3a;
-  border-radius: 8px;
   outline: #ff3a3a;
+  opacity: 0.6;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: italic;
+  padding: 10px;
 }
 .flex-container {
   display: flex;
