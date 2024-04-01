@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  The ideal platform to search, filter, drag and drop employees listout under different managers. 
+  The ideal platform to search, filter, drag and drop employees listouted under different managers. 
 </p>
 
 ## Video Demo
@@ -21,13 +21,13 @@
 1. Fork this repository and clone the project
 
    ```bash
-   git clone https://github.com/Prakash-Ravichandran/react_cryptocurrency_app
+   git clone https://github.com/Prakash-Ravichandran/org_chart.git
    ```
 
 2. Go to the project directory
 
    ```bash
-   cd react_cryptocurrency_app
+   cd org_chart
    ```
 
 3. Install dependencies
@@ -39,7 +39,7 @@
 4. Start the server
 
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## The Process
