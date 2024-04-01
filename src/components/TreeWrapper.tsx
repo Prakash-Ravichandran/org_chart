@@ -9,7 +9,7 @@ import Dropdown from "./Dropdown";
 import { ManagerCard } from "./ManagerCard";
 import { Search } from "./Search";
 
-const typesHero: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
+const Managers: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
 
 const StyledNode = styled.div`
   display: inline-block;
@@ -87,7 +87,7 @@ export const TreeWrapper = () => {
         }
       >
         <div className="grid">
-          {typesHero.map((container) => (
+          {Managers.map((container) => (
             <ManagerCard
               status={container}
               key={container}

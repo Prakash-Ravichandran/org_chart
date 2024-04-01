@@ -1,7 +1,10 @@
 export const Title = () => {
   return (
     <div className="title flex">
-      <h1>Employee Organizational Chart </h1>
+      <span>
+        <img />
+      </span>
+      <h1>Employee Organization Chart </h1>
     </div>
   );
 };
