@@ -84,7 +84,9 @@ export const DragAndDrop = () => {
               />
             </span>
             <p>{"William HallBerg"}</p>
-            <span className="ceo-designation">{"Chief Executive Officer"}</span>
+            <span className="ceo-designation">
+              {"Designation: Chief Executive Officer"}
+            </span>
           </StyledNode>
         }
       >
