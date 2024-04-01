@@ -61,14 +61,6 @@ https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/92a9fbed-07ca-
 
 - (pending)
 
-### User Stories
-
-- As a user, I want to be able to navigate to all routes(sidebars) & view all the components.
-- As a user, I want to search cryptocurrencies like Bitcoin & view them in detail in `Cryptocurrencies Component`.
-- As a user, I want to filter the exchange the currency with amother currency in `Exchange component`.
-- As a user, I want to filter the news based on the country in `News Component`.
-- As a user, I want to submit the feeback in a form in the `Contact Component`.
-
 ### Features
 
 - **Search:** Search funtionality in the app renders the employees based all properties of an employee fetched from mock data.
