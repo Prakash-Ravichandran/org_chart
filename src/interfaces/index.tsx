@@ -18,7 +18,15 @@ export interface DropdownProps {
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
 
-export interface EmployeeProps {
+export interface EmployeeCardProps {
   data: Data;
+  handleDragging: (dragging: boolean) => void;
+}
+
+export interface ManagerCardProps {
+  items: Data[];
+  status: Status;
+  isDragging: boolean;
+  handleUpdateList: (id: number, status: Status) => void;
   handleDragging: (dragging: boolean) => void;
 }

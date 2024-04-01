@@ -1,15 +1,7 @@
 import { TreeNode } from "react-organizational-chart";
 import styled from "styled-components";
-import { Data, Status } from "../interfaces";
+import { ManagerCardProps } from "../interfaces";
 import { EmployeeCard } from "./EmployeeCard";
-
-interface Props {
-  items: Data[];
-  status: Status;
-  isDragging: boolean;
-  handleUpdateList: (id: number, status: Status) => void;
-  handleDragging: (dragging: boolean) => void;
-}
 
 const StyledNode = styled.div`
   display: inline-block;
@@ -29,7 +21,7 @@ export const ManagerCard = ({
   isDragging,
   handleDragging,
   handleUpdateList,
-}: Props) => {
+}: ManagerCardProps) => {
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     handleUpdateList(+e.dataTransfer.getData("text"), status);
