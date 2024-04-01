@@ -4,6 +4,7 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "allowSyntheticDefaultImports": true
+    // "types": ["node", "graceful-fs"]
   },
   "include": ["vite.config.ts"]
 }

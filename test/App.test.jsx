@@ -1,15 +1,15 @@
-import { describe, it } from "vitest";
+import { render } from "@testing-library/react";
+import { describe, expect, it } from "vitest";
 import { Search } from "../src/components/Search";
 
-describe("A truthy statement", () => {
-  it("should be equal to 2", () => {
-    // expect(1 + 1).toEqual(2);
+describe("Testing a Search Component", () => {
+  it("Search Component is rendering", () => {
     <Search></Search>;
   });
-  it("Search is Present", () => {
-    // <Search></Search>;
-    // const searchInput = getByTestId("Search an Employee...");
-    // console.log("Inside" + searchInput);
+  it("Placeholder is present", () => {
+    const { queryByPlaceholderText } = render(<Search />);
+    const searchInput = queryByPlaceholderText("Search an Employee...");
+    expect(searchInput.value).toBe("");
   });
 });
 
