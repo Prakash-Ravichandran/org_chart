@@ -73,7 +73,19 @@ export const DragAndDrop = () => {
         lineWidth={"3px"}
         lineColor={"#ff3a3a"}
         lineBorderRadius={"10px"}
-        label={<StyledNode>{"William HallBerg"} </StyledNode>}
+        label={
+          <StyledNode>
+            <span>
+              <img
+                src={
+                  "https://bumbeishvili.github.io/avatars/avatars/portrait48.png"
+                }
+                alt="Maneger"
+              />
+            </span>
+            <p>{"William HallBerg"}</p>
+          </StyledNode>
+        }
       >
         <div className="grid">
           {typesHero.map((container) => (

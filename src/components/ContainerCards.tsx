@@ -48,7 +48,16 @@ export const ContainerCards = ({
       <TreeNode
         label={
           <StyledNode>
+            <span>
+              <img
+                src={
+                  "https://bumbeishvili.github.io/avatars/avatars/portrait10.png"
+                }
+                alt="Maneger"
+              />
+            </span>
             {status}
+
             <p>Manager</p>
           </StyledNode>
         }
