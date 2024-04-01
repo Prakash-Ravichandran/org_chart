@@ -1,14 +1,15 @@
 import React from "react";
+import { DropdownProps } from "../interfaces";
 
-interface DropdownProps {
-  options: Array<{
-    id: number;
-    name: String;
-    designation: String;
-    status: String;
-  }>;
-  onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
-}
+// interface DropdownProps {
+//   options: Array<{
+//     id: number;
+//     name: String;
+//     designation: String;
+//     status: String;
+//   }>;
+//   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+// }
 
 const Dropdown: React.FC<DropdownProps> = ({ options, onChange }) => {
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
@@ -39,9 +40,6 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange }) => {
   return (
     <>
       <select onChange={handleSelectChange}>
-        {/* <option value={"Choose an Employee"}>
-          {"Choose by Designation ..."}
-        </option> */}
         {options.map((option) => (
           <option key={option.id} value={option.id}>
             {option.designation}
