@@ -57,7 +57,7 @@ export const ContainerCards = ({
               />
             </span>
             <p>{status}</p>
-            <span>Manager</span>
+            <span>{"Designation: Engineering Manager"}</span>
           </StyledNode>
         }
       >
