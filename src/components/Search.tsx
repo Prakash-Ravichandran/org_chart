@@ -3,14 +3,9 @@ import React, { useRef } from "react";
 interface searchProps {
   Value: string;
   handleInputChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  StyleProp: Object;
 }
 
-export const Search = ({
-  Value,
-  handleInputChange,
-  StyleProp,
-}: searchProps) => {
+export const Search = ({ Value, handleInputChange }: searchProps) => {
   const inputRef = useRef<HTMLInputElement | null>();
   //   const [focusInput, setFocusInput] = useFocus();
 
@@ -33,8 +28,6 @@ export const Search = ({
           placeholder="Search an Employee..."
           value={Value}
           onChange={handleSearchChange}
-          style={StyleProp}
-          //   ref={focusInput}
         />
       </div>
     </>
