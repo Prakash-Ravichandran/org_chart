@@ -56,11 +56,9 @@
 
 ### Features
 
-- **Google Identity Services:** users can able to login using their own gmail Id.
-- **Mock Server for Login:** Users can able to login with credentials after running the auth server in local.
-- **Data Fetching:** App fetches the relevant cryptocurrencies from coinranking, exchanges, news API's.
-- **Search:** App renders the specific number of cryptocurrencies per search.
-- **Dropdown:** App fetches the required cryptocurrencies according to the selected dropdowns.
+- **Search:** Search funtionality in the app renders the employees based all properties of an employee fetched from mock data.
+- **Dropdown:** Dropdown functionality in the app renders the employees based on the designation of an employees fetched from mock data.
+- **Drag & Drop:** Drag and Drop functionality changes the employee from reporting to one manager to other.
 
 ### API Services used
 
