@@ -34,7 +34,7 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange }) => {
 
   //   console.log(getUniqueListBy(options, "designation"));
 
-  let result = options.map(({ designation }) => designation);
+  //   let result = options.map(({ designation }) => designation)
 
   return (
     <>
@@ -42,8 +42,10 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange }) => {
         {/* <option value={"Choose an Employee"}>
           {"Choose by Designation ..."}
         </option> */}
-        {result.map((option) => (
-          <option value={option}>{option}</option>
+        {options.map((option) => (
+          <option key={option.id} value={option.id}>
+            {option.designation}
+          </option>
         ))}
       </select>
     </>
