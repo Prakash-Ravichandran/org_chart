@@ -12,12 +12,14 @@ interface Props {
 }
 
 const StyledNode = styled.div`
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 8px;
   display: inline-block;
+  border-radius: 8px;
   border: 2px solid #ff3a3a;
   color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  padding: 10px;
 `;
 
 export const ContainerCards = ({
@@ -60,18 +62,6 @@ export const ContainerCards = ({
           }
         ></TreeNode>
       </TreeNode>
-
-      {/* <p>{status} </p>
-      {items.map(
-        (item) =>
-          status === item.status && (
-            <CardItem
-              data={item}
-              key={item.id}
-              handleDragging={handleDragging}
-            />
-          )
-      )} */}
     </div>
   );
 };

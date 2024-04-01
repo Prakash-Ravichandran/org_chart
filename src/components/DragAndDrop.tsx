@@ -11,11 +11,14 @@ import { Search } from "./Search";
 const typesHero: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
 
 const StyledNode = styled.div`
-  padding: 10px;
-  border-radius: 8px;
   display: inline-block;
+  border-radius: 8px;
   border: 2px solid #ff3a3a;
   color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  padding: 10px;
 `;
 
 export const DragAndDrop = () => {
