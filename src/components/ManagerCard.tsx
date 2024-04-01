@@ -1,6 +1,7 @@
 import { TreeNode } from "react-organizational-chart";
 import styled from "styled-components";
 import { ManagerCardProps } from "../interfaces";
+import { ManagerCardConstants } from "./contants";
 import { EmployeeCard } from "./EmployeeCard";
 
 const StyledNode = styled.div`
@@ -42,14 +43,10 @@ export const ManagerCard = ({
         label={
           <StyledNode>
             <span>
-              <img
-                src={
-                  "https://bumbeishvili.github.io/avatars/avatars/portrait14.png"
-                }
-              />
+              <img src={`${ManagerCardConstants.image}`} />
             </span>
             <p>{status}</p>
-            <span>{"Designation: Engineering Manager"}</span>
+            <span>{`${ManagerCardConstants.designationLabel}: ${ManagerCardConstants.designation}`}</span>
           </StyledNode>
         }
       >
