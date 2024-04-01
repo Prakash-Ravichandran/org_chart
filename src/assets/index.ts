@@ -39,7 +39,7 @@ export const data: Data[] = [
   {
     id: 6,
     name: "Shanta vollmans",
-    designation: "Chief Accountant",
+    designation: "Client Representative",
     image: "https://bumbeishvili.github.io/avatars/avatars/portrait4.png",
     status: "Mikel Arteta",
   },

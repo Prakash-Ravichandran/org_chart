@@ -130,6 +130,13 @@ body {
     grid-template-rows: 1fr;
   }
 
+  .title > h1 {
+    font-size: 2rem;
+  }
+  .flex-container {
+    align-self: center;
+  }
+
   .layout-cards {
     overflow-y: scroll;
     height: 250px;
