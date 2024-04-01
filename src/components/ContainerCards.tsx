@@ -1,7 +1,7 @@
 import { TreeNode } from "react-organizational-chart";
 import styled from "styled-components";
 import { Data, Status } from "../interfaces";
-import { CardItem } from "./CardItem";
+import { EmployeeCard } from "./EmployeeCard";
 
 interface Props {
   items: Data[];
@@ -67,7 +67,7 @@ export const ContainerCards = ({
               {items.map(
                 (item) =>
                   status === item.status && (
-                    <CardItem
+                    <EmployeeCard
                       data={item}
                       key={item.id}
                       handleDragging={handleDragging}

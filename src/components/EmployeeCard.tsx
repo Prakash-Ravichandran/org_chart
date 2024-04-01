@@ -6,7 +6,7 @@ interface Props {
   handleDragging: (dragging: boolean) => void;
 }
 
-export const CardItem = ({ data, handleDragging }: Props) => {
+export const EmployeeCard = ({ data, handleDragging }: Props) => {
   const handleDragStart = (e: React.DragEvent<HTMLDivElement>) => {
     e.dataTransfer.setData("Text", `${data.id}`);
     handleDragging(true);
