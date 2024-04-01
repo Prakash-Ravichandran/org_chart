@@ -3,12 +3,13 @@
 </h1>
 
 <p align="center">
-  The ideal platform to search, filter, drag and drop employees listouted under different managers. 
+  The ideal platform to search, filter, drag and drop employees listed out under different managers. </br>
+  Users can Search an Employee based on the id, name, designation, reporting manager. </br>
+  Users can Filter out an Employee based on the designation.
+  Users can Drag and Drop an Employee from Reporting Manager to Another Manager.
 </p>
 
-## Visit Live Demo
-
-[Live-Demo](https://org-employee.netlify.app/)
+## Visit Live - [Live-Demo](https://org-employee.netlify.app/)
 
 ## Screenshots
 
