@@ -10,7 +10,9 @@
 
 ## TechStack Used
 
-- [React.js](https://react.dev/)
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [CSS3](https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/)
 - [react-organizational-chart](https://www.npmjs.com/package/react-organizational-chart)
 - [Hosting- Netlify](https://www.netlify.com/)
 
