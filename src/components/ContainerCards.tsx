@@ -63,7 +63,7 @@ export const ContainerCards = ({
       >
         <TreeNode
           label={
-            <div>
+            <div className="employee-overflow">
               {items.map(
                 (item) =>
                   status === item.status && (

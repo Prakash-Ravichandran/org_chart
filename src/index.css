@@ -103,6 +103,10 @@ body {
   font-style: italic;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.employee-overflow {
+  height: 50vh;
+  overflow-y: scroll;
+}
 
 /* SINGLE CARD */
 .card-container {
