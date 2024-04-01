@@ -135,6 +135,11 @@ body {
   }
   .flex-container {
     align-self: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .choose-employee {
+    width: 100%;
   }
 
   .layout-cards {
