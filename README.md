@@ -5,7 +5,7 @@
 <p align="center">
   The ideal platform to search, filter, drag and drop employees listed out under different managers. </br>
   Users can Search an Employee based on the id, name, designation, reporting manager. </br>
-  Users can Filter out an Employee based on the designation.
+  Users can Filter out an Employee based on the designation.</br>
   Users can Drag and Drop an Employee from Reporting Manager to Another Manager.
 </p>
 
