@@ -17,3 +17,8 @@ export interface DropdownProps {
   }>;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
+
+export interface EmployeeProps {
+  data: Data;
+  handleDragging: (dragging: boolean) => void;
+}

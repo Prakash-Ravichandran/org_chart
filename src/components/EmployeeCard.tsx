@@ -1,12 +1,7 @@
 import React from "react";
-import { Data } from "../interfaces";
+import { EmployeeProps } from "../interfaces";
 
-interface Props {
-  data: Data;
-  handleDragging: (dragging: boolean) => void;
-}
-
-export const EmployeeCard = ({ data, handleDragging }: Props) => {
+export const EmployeeCard = ({ data, handleDragging }: EmployeeProps) => {
   const handleDragStart = (e: React.DragEvent<HTMLDivElement>) => {
     e.dataTransfer.setData("Text", `${data.id}`);
     handleDragging(true);
