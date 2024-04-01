@@ -3,15 +3,6 @@ import { searchProps } from "../interfaces";
 
 export const Search = ({ Value, handleInputChange }: searchProps) => {
   const inputRef = useRef<HTMLInputElement | null>();
-  //   const [focusInput, setFocusInput] = useFocus();
-
-  //   useEffect(() => {
-  //     // Focus the input element when the component mounts
-  //     if (focusInput.current) {
-  //       focusInput.current.focus();
-  //     }
-  //   }, []);
-
   const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     handleInputChange(e);
   };
