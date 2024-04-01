@@ -1,5 +1,5 @@
 <h1 align="center">
- EMPLOYEE ORGANIZATION CHART - 
+ - EMPLOYEE ORGANIZATION CHART - 
 </h1>
 
 <p align="center">
