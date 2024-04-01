@@ -23,6 +23,8 @@
 - [Typescript](https://www.typescriptlang.org/)
 - [CSS3](https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/)
 - [react-organizational-chart](https://www.npmjs.com/package/react-organizational-chart)
+- [Styled-Components](https://www.npmjs.com/package/styled-components)
+- [Unit-Testing-Vitest-React-Testing-Library](https://vitest.dev/)
 - [Hosting- Netlify](https://www.netlify.com/)
 
 ### 1. Setting up the project locally
