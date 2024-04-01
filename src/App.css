@@ -76,5 +76,4 @@ select {
 .flex-container {
   display: flex;
   margin: 25px;
-  align-self: flex-start;
 }
