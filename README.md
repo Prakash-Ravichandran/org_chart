@@ -59,6 +59,7 @@
 - **Search:** Search funtionality in the app renders the employees based all properties of an employee fetched from mock data.
 - **Dropdown:** Dropdown functionality in the app renders the employees based on the designation of an employees fetched from mock data.
 - **Drag & Drop:** Drag and Drop functionality changes the employee from reporting to one manager to other.
+- **List Out in Card**: The Employee card listouts the details of name, designation, reporting Manager.
 
 ### API Services used
 
