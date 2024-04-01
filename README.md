@@ -10,7 +10,7 @@
 
 [Live-Demo](https://org-employee.netlify.app/)
 
-## ScreenShots
+## Screenshots
 
 ![Organization_chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/3d657dc6-cd0c-4b92-9671-3ccddf867c5b)
 
