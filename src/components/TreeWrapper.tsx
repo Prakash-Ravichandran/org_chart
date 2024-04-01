@@ -24,7 +24,7 @@ const StyledNode = styled.div`
   animation: fadeIn 0.3s ease-in-out;
 `;
 
-export const DragAndDrop = () => {
+export const TreeWrapper = () => {
   const {
     isDragging,
     listItems,

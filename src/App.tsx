@@ -1,14 +1,13 @@
 import "./App.css";
-import { DragAndDrop } from "./components/DragAndDrop";
-
 import { Title } from "./components/Title";
+import { TreeWrapper } from "./components/TreeWrapper";
 
 function App() {
   return (
     <>
       <div className="container-main flex">
         <Title />
-        <DragAndDrop />
+        <TreeWrapper />
       </div>
     </>
   );
