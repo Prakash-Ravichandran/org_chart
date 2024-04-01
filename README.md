@@ -10,6 +10,10 @@
 
 [Live-Demo](https://org-employee.netlify.app/)
 
+## ScreenShots
+
+![Organization_chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/3d657dc6-cd0c-4b92-9671-3ccddf867c5b)
+
 ## Video Demo
 
 ## TechStack Used
@@ -47,6 +51,10 @@
    ```bash
    npm run dev
    ```
+
+## ScreenShots
+
+![Organization_chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/3d657dc6-cd0c-4b92-9671-3ccddf867c5b)
 
 ## The Process
 
