@@ -22,14 +22,17 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange }) => {
   //       designation: String;
   //       status: String;
   //     }>,
-  //     key
+  //     key: Array<{
+  //       id: number;
+  //       name: String;
+  //       designation: String;
+  //       status: String;
+  //     }>
   //   ) {
   //     return [...new Map(arr.map((item) => [item[key], item])).values()];
   //   }
 
   //   console.log(getUniqueListBy(options, "designation"));
-
-  //   options.designation = [...new Set()]
 
   return (
     <>

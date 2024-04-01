@@ -98,6 +98,13 @@ body {
   font-size: 1rem;
 }
 
+.card-container > span img {
+  max-width: 100%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
