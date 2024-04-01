@@ -17,7 +17,7 @@
 
 ## Video Demo
 
-![Video Demo](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/92a9fbed-07ca-4d2e-9c88-ad5d343fb7eb)
+https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/92a9fbed-07ca-4d2e-9c88-ad5d343fb7eb
 
 ## TechStack Used
 
