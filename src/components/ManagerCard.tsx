@@ -23,7 +23,7 @@ const StyledNode = styled.div`
   padding: 10px;
 `;
 
-export const ContainerCards = ({
+export const ManagerCard = ({
   items = [],
   status,
   isDragging,

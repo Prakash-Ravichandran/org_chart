@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { data } from "../assets";
 import { useDrapAndDrop } from "../hooks/useDragAndDrop";
 import { Status } from "../interfaces";
-import { ContainerCards } from "./ContainerCards";
 import Dropdown from "./Dropdown";
+import { ManagerCard } from "./ManagerCard";
 import { Search } from "./Search";
 
 const typesHero: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
@@ -92,7 +92,7 @@ export const DragAndDrop = () => {
       >
         <div className="grid">
           {typesHero.map((container) => (
-            <ContainerCards
+            <ManagerCard
               status={container}
               key={container}
               items={filteredData}
