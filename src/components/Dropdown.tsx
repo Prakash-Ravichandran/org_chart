@@ -7,14 +7,14 @@ const Dropdown: React.FC<DropdownProps> = ({ options, onChange }) => {
   };
 
   const ids = options.map(({ designation }) => designation);
-  const filtered = options.filter(
+  const designations = options.filter(
     ({ designation }, index) => !ids.includes(designation, index + 1)
   );
 
   return (
     <>
       <select onChange={handleSelectChange}>
-        {filtered.map((option) => (
+        {designations.map((option) => (
           <option key={option.id} value={option.id}>
             {option.designation}
           </option>
