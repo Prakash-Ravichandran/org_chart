@@ -58,6 +58,12 @@ https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/92a9fbed-07ca-
    npm run dev
    ```
 
+5. Run Test Cases
+
+   ```bash
+   npm run test
+   ```
+
 ### Features
 
 - **Search:** Search funtionality in the app renders the employees based all properties of an employee fetched from mock data.
