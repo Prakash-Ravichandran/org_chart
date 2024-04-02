@@ -91,10 +91,10 @@ export const TreeWrapper = () => {
         }
       >
         <div className="grid">
-          {reportingManagers.map((container) => (
+          {reportingManagers.map((manager) => (
             <ManagerCard
-              reportsTo={container}
-              key={container}
+              reportsTo={manager}
+              key={manager}
               items={filteredData}
               isDragging={isDragging}
               handleDragging={handleDragging}
