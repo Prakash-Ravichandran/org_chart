@@ -24,6 +24,7 @@ https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/92a9fbed-07ca-
 - [React](https://react.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [CSS3](https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/)
+- [Vite](https://vitejs.dev/)
 - [react-organizational-chart](https://www.npmjs.com/package/react-organizational-chart)
 - [Styled-Components](https://www.npmjs.com/package/styled-components)
 - [Unit-Testing-Vitest-React-Testing-Library](https://vitest.dev/)
@@ -57,16 +58,17 @@ https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/92a9fbed-07ca-
    npm run dev
    ```
 
-## The Process
-
-- (pending)
-
 ### Features
 
 - **Search:** Search funtionality in the app renders the employees based all properties of an employee fetched from mock data.
 - **Dropdown:** Dropdown functionality in the app renders the employees based on the designation of an employees fetched from mock data.
 - **Drag & Drop:** Drag and Drop functionality changes the employee from reporting to one manager to other.
 - **List Out in Card**: The Employee card listouts the details of name, designation, reporting Manager.
+
+## Unit Testing
+
+- **Search**: Written a Unit Testing for Search Component & Placholder for Search.
+- **Dropdown**: Written a Unit Testing for Dropdwon Component & Options for Dropdwon.
 
 ## Current Contributors
 
