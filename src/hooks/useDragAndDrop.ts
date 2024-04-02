@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Data, Status } from "../interfaces";
+import { Data, Managers } from "../interfaces";
 
 export const useDrapAndDrop = (data: Data[]) => {
   const [isDragging, setIsDragging] = useState(false);
@@ -7,11 +7,11 @@ export const useDrapAndDrop = (data: Data[]) => {
 
   const handleDragging = (dragging: boolean) => setIsDragging(dragging);
 
-  const handleUpdateList = (id: number, status: Status) => {
+  const handleUpdateList = (id: number, reportsTo: Managers) => {
     let card = listItems.find((item) => item.id === id);
 
-    if (card && card.status !== status) {
-      card.status = status;
+    if (card && card.reportsTo !== reportsTo) {
+      card.reportsTo = reportsTo;
       setListItems((prev) => [card!, ...prev.filter((item) => item.id !== id)]);
     }
   };

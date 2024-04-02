@@ -21,7 +21,7 @@ export const EmployeeCard = ({ data, handleDragging }: EmployeeCardProps) => {
       </span>
       <p>{data.name}</p>
       <span>{`${EmployeeCardConstants.designationLabel}: ${data.designation}`}</span>
-      <span>{`${EmployeeCardConstants.reporterLabel}: ${data.status}`}</span>
+      <span>{`${EmployeeCardConstants.reporterLabel}: ${data.reportsTo}`}</span>
     </div>
   );
 };

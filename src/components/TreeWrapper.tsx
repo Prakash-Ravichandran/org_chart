@@ -3,13 +3,17 @@ import { Tree } from "react-organizational-chart";
 import styled from "styled-components";
 import { data } from "../assets";
 import { useDrapAndDrop } from "../hooks/useDragAndDrop";
-import { Status } from "../interfaces";
+import { Managers } from "../interfaces";
 import { TreeWrapperConstants } from "./contants";
 import Dropdown from "./Dropdown";
 import { ManagerCard } from "./ManagerCard";
 import { Search } from "./Search";
 
-const Managers: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
+const reportingManagers: Managers[] = [
+  "Thomas Frank",
+  "Mark Robins",
+  "Mikel Arteta",
+];
 
 const StyledNode = styled.div`
   display: inline-block;
@@ -58,7 +62,7 @@ export const TreeWrapper = () => {
         employee.name.toLowerCase().includes(search.toLowerCase()) ||
         employee.id === +search.toLowerCase() ||
         employee.designation.toLowerCase().includes(search.toLowerCase()) ||
-        employee.status.toLowerCase().includes(search.toLowerCase())
+        employee.reportsTo.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredData(filteredData);
   };
@@ -87,9 +91,9 @@ export const TreeWrapper = () => {
         }
       >
         <div className="grid">
-          {Managers.map((container) => (
+          {reportingManagers.map((container) => (
             <ManagerCard
-              status={container}
+              reportsTo={container}
               key={container}
               items={filteredData}
               isDragging={isDragging}
