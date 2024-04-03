@@ -12,9 +12,9 @@ export const useDrapAndDrop = (data: Data[]) => {
 
     if (employeeCard && employeeCard.reportsTo !== reportsTo) {
       employeeCard.reportsTo = reportsTo;
-      setListItems((prev) => [
+      setListItems((allEmployeeCards) => [
         employeeCard!,
-        ...prev.filter((employee) => employee.id !== id),
+        ...allEmployeeCards.filter((employee) => employee.id !== id),
       ]);
     }
   };
