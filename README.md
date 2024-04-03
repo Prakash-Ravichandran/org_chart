@@ -13,7 +13,7 @@
 
 ## Screenshots
 
-![Organization_chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/3d657dc6-cd0c-4b92-9671-3ccddf867c5b)
+![Org_Chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/7ea068e3-f51c-4403-ad9f-017a4f276fea)
 
 ## Video Demo
 
