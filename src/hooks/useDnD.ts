@@ -1,18 +1,18 @@
 import { useState } from "react";
 import { Data, Managers } from "../interfaces";
 
-export const useDrapAndDrop = (data: Data[]) => {
+export const useDnD = (data: Data[]) => {
   const [isDragging, setIsDragging] = useState(false);
-  const [listItems, setListItems] = useState<Data[]>(data);
+  const [listEmployees, setListEmployees] = useState<Data[]>(data);
 
   const handleDragging = (dragging: boolean) => setIsDragging(dragging);
 
   const handleUpdateList = (id: number, reportsTo: Managers) => {
-    let employeeCard = listItems.find((employee) => employee.id === id);
+    let employeeCard = listEmployees.find((employee) => employee.id === id);
 
     if (employeeCard && employeeCard.reportsTo !== reportsTo) {
       employeeCard.reportsTo = reportsTo;
-      setListItems((allEmployeeCards) => [
+      setListEmployees((allEmployeeCards) => [
         employeeCard!,
         ...allEmployeeCards.filter((employee) => employee.id !== id),
       ]);
@@ -21,8 +21,8 @@ export const useDrapAndDrop = (data: Data[]) => {
 
   return {
     isDragging,
-    listItems,
-    setListItems,
+    listEmployees,
+    setListEmployees,
     handleDragging,
     handleUpdateList,
   };

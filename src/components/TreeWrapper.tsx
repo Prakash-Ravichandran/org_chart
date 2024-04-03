@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { Tree } from "react-organizational-chart";
 import styled from "styled-components";
 import { data } from "../assets";
-import { useDrapAndDrop } from "../hooks/useDragAndDrop";
+import { useDnD } from "../hooks/useDnD";
 import { Managers } from "../interfaces";
 import { TreeWrapperConstants } from "./contants";
 import Dropdown from "./Dropdown";
@@ -32,11 +32,11 @@ const StyledNode = styled.div`
 export const TreeWrapper = () => {
   const {
     isDragging,
-    listItems,
-    setListItems,
+    listEmployees,
+    setListEmployees,
     handleDragging,
     handleUpdateList,
-  } = useDrapAndDrop(data);
+  } = useDnD(data);
 
   const [search, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState(data);
