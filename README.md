@@ -17,7 +17,7 @@
 
 ## Video Demo
 
-https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/92a9fbed-07ca-4d2e-9c88-ad5d343fb7eb
+[Employee-Organization-Chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/5b029f9e-fdb1-4b5a-a245-35b7275379b2)
 
 ## TechStack Used
 
