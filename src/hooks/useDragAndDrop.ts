@@ -8,11 +8,14 @@ export const useDrapAndDrop = (data: Data[]) => {
   const handleDragging = (dragging: boolean) => setIsDragging(dragging);
 
   const handleUpdateList = (id: number, reportsTo: Managers) => {
-    let card = listItems.find((item) => item.id === id);
+    let employeeCard = listItems.find((employee) => employee.id === id);
 
-    if (card && card.reportsTo !== reportsTo) {
-      card.reportsTo = reportsTo;
-      setListItems((prev) => [card!, ...prev.filter((item) => item.id !== id)]);
+    if (employeeCard && employeeCard.reportsTo !== reportsTo) {
+      employeeCard.reportsTo = reportsTo;
+      setListItems((prev) => [
+        employeeCard!,
+        ...prev.filter((employee) => employee.id !== id),
+      ]);
     }
   };
 
