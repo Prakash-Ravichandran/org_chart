@@ -11,7 +11,7 @@ export const data: Data[] = [
   {
     id: 2,
     name: "John Doe",
-    designation: "Programmer",
+    designation: "Development Engineer",
     image: "https://bumbeishvili.github.io/avatars/avatars/portrait27.png",
     reportsTo: "Mark Robins",
   },
@@ -25,7 +25,7 @@ export const data: Data[] = [
   {
     id: 4,
     name: "Smith Mark",
-    designation: "Programmer",
+    designation: "Devops Engineer",
     image: "https://bumbeishvili.github.io/avatars/avatars/portrait28.png",
     reportsTo: "Mikel Arteta",
   },
@@ -42,5 +42,26 @@ export const data: Data[] = [
     designation: "Client Representative",
     image: "https://bumbeishvili.github.io/avatars/avatars/portrait4.png",
     reportsTo: "Mikel Arteta",
+  },
+  {
+    id: 7,
+    name: "Matthew Weiss",
+    designation: "Warehouse Manager",
+    image: "https://bumbeishvili.github.io/avatars/avatars/portrait40.png",
+    reportsTo: "Mikel Arteta",
+  },
+  {
+    id: 8,
+    name: "Anne Carlone",
+    designation: "Sales Represntative",
+    image: "https://bumbeishvili.github.io/avatars/avatars/portrait42.png",
+    reportsTo: "Mark Robins",
+  },
+  {
+    id: 9,
+    name: "Ki Gee",
+    designation: "Stock Clerk",
+    image: "https://bumbeishvili.github.io/avatars/avatars/portrait13.png",
+    reportsTo: "Thomas Frank",
   },
 ];
