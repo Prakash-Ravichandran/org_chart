@@ -9,7 +9,6 @@ export const useDnD = (data: Data[]) => {
 
   const handleUpdateList = (id: number, reportsTo: Managers) => {
     let employeeCard = listEmployees.find((employee) => employee.id === id);
-
     if (employeeCard && employeeCard.reportsTo !== reportsTo) {
       employeeCard.reportsTo = reportsTo;
       setListEmployees((allEmployeeCards) => [

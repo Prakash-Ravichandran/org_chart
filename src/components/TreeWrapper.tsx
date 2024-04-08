@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Tree } from "react-organizational-chart";
 import styled from "styled-components";
 import { data } from "../assets";
@@ -41,7 +41,6 @@ export const TreeWrapper = () => {
   const [search, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState(data);
   const [category, setCatergory] = useState(""); // state for dropdown
-  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
