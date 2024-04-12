@@ -18,14 +18,14 @@ const StyledNode = styled.div`
 
 export const ManagerCard = ({
   items = [],
-  status,
+  reportsTo,
   isDragging,
   handleDragging,
   handleUpdateList,
 }: ManagerCardProps) => {
   const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
-    handleUpdateList(+e.dataTransfer.getData("text"), status);
+    handleUpdateList(+e.dataTransfer.getData("text"), reportsTo);
     handleDragging(false);
   };
 
@@ -45,7 +45,7 @@ export const ManagerCard = ({
             <span>
               <img src={`${ManagerCardConstants.image}`} />
             </span>
-            <p>{status}</p>
+            <p>{reportsTo}</p>
             <span>{`${ManagerCardConstants.designationLabel}: ${ManagerCardConstants.designation}`}</span>
           </StyledNode>
         }
@@ -55,7 +55,7 @@ export const ManagerCard = ({
             <div className="employee-overflow">
               {items.map(
                 (item) =>
-                  status === item.status && (
+                  reportsTo === item.reportsTo && (
                     <EmployeeCard
                       data={item}
                       key={item.id}

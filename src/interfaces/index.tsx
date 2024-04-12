@@ -1,11 +1,11 @@
-export type Status = "Thomas Frank" | "Mikel Arteta" | "Mark Robins";
+export type Managers = "Thomas Frank" | "Mikel Arteta" | "Mark Robins";
 
 export interface Data {
   id: number;
   name: String;
   designation: String;
   image: string;
-  status: Status;
+  reportsTo: Managers;
 }
 
 export interface DropdownProps {
@@ -13,7 +13,7 @@ export interface DropdownProps {
     id: number;
     name: String;
     designation: String;
-    status: String;
+    reportsTo: String;
   }>;
   onChange: (e: React.ChangeEvent<HTMLSelectElement>) => void;
 }
@@ -25,9 +25,9 @@ export interface EmployeeCardProps {
 
 export interface ManagerCardProps {
   items: Data[];
-  status: Status;
+  reportsTo: Managers;
   isDragging: boolean;
-  handleUpdateList: (id: number, status: Status) => void;
+  handleUpdateList: (id: number, reportsTo: Managers) => void;
   handleDragging: (dragging: boolean) => void;
 }
 

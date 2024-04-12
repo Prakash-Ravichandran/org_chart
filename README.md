@@ -13,15 +13,18 @@
 
 ## Screenshots
 
-![Organization_chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/3d657dc6-cd0c-4b92-9671-3ccddf867c5b)
+![Org_Chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/7ea068e3-f51c-4403-ad9f-017a4f276fea)
 
 ## Video Demo
+
+[Employee-Organization-Chart](https://github.com/Prakash-Ravichandran/org_chart/assets/74542543/5b029f9e-fdb1-4b5a-a245-35b7275379b2)
 
 ## TechStack Used
 
 - [React](https://react.dev/)
 - [Typescript](https://www.typescriptlang.org/)
 - [CSS3](https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/)
+- [Vite](https://vitejs.dev/)
 - [react-organizational-chart](https://www.npmjs.com/package/react-organizational-chart)
 - [Styled-Components](https://www.npmjs.com/package/styled-components)
 - [Unit-Testing-Vitest-React-Testing-Library](https://vitest.dev/)
@@ -55,17 +58,11 @@
    npm run dev
    ```
 
-## The Process
+5. Run Test Cases
 
-- (pending)
-
-### User Stories
-
-- As a user, I want to be able to navigate to all routes(sidebars) & view all the components.
-- As a user, I want to search cryptocurrencies like Bitcoin & view them in detail in `Cryptocurrencies Component`.
-- As a user, I want to filter the exchange the currency with amother currency in `Exchange component`.
-- As a user, I want to filter the news based on the country in `News Component`.
-- As a user, I want to submit the feeback in a form in the `Contact Component`.
+   ```bash
+   npm run test
+   ```
 
 ### Features
 
@@ -73,6 +70,11 @@
 - **Dropdown:** Dropdown functionality in the app renders the employees based on the designation of an employees fetched from mock data.
 - **Drag & Drop:** Drag and Drop functionality changes the employee from reporting to one manager to other.
 - **List Out in Card**: The Employee card listouts the details of name, designation, reporting Manager.
+
+## Unit Testing
+
+- **Search**: Written a Unit Testing for Search Component & Placholder for Search.
+- **Dropdown**: Written a Unit Testing for Dropdwon Component & Options for Dropdwon.
 
 ## Current Contributors
 

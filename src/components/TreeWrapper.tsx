@@ -1,15 +1,19 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Tree } from "react-organizational-chart";
 import styled from "styled-components";
 import { data } from "../assets";
-import { useDrapAndDrop } from "../hooks/useDragAndDrop";
-import { Status } from "../interfaces";
+import { useDnD } from "../hooks/useDnD";
+import { Managers } from "../interfaces";
 import { TreeWrapperConstants } from "./contants";
 import Dropdown from "./Dropdown";
 import { ManagerCard } from "./ManagerCard";
 import { Search } from "./Search";
 
-const Managers: Status[] = ["Thomas Frank", "Mark Robins", "Mikel Arteta"];
+const reportingManagers: Managers[] = [
+  "Thomas Frank",
+  "Mark Robins",
+  "Mikel Arteta",
+];
 
 const StyledNode = styled.div`
   display: inline-block;
@@ -28,16 +32,15 @@ const StyledNode = styled.div`
 export const TreeWrapper = () => {
   const {
     isDragging,
-    listItems,
-    setListItems,
+    listEmployees,
+    setListEmployees,
     handleDragging,
     handleUpdateList,
-  } = useDrapAndDrop(data);
+  } = useDnD(data);
 
   const [search, setSearchTerm] = useState("");
   const [filteredData, setFilteredData] = useState(data);
   const [category, setCatergory] = useState(""); // state for dropdown
-  const inputRef = useRef<HTMLInputElement>(null);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
@@ -58,7 +61,7 @@ export const TreeWrapper = () => {
         employee.name.toLowerCase().includes(search.toLowerCase()) ||
         employee.id === +search.toLowerCase() ||
         employee.designation.toLowerCase().includes(search.toLowerCase()) ||
-        employee.status.toLowerCase().includes(search.toLowerCase())
+        employee.reportsTo.toLowerCase().includes(search.toLowerCase())
     );
     setFilteredData(filteredData);
   };
@@ -87,10 +90,10 @@ export const TreeWrapper = () => {
         }
       >
         <div className="grid">
-          {Managers.map((container) => (
+          {reportingManagers.map((manager) => (
             <ManagerCard
-              status={container}
-              key={container}
+              reportsTo={manager}
+              key={manager}
               items={filteredData}
               isDragging={isDragging}
               handleDragging={handleDragging}
