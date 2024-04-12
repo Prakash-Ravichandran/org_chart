@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import { Title } from "./components/Title";
 import { TreeWrapper } from "./components/TreeWrapper";
 
@@ -8,6 +9,7 @@ function App() {
       <div className="container-main flex">
         <Title />
         <TreeWrapper />
+        <Footer />
       </div>
     </>
   );
